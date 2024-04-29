@@ -6,4 +6,24 @@
     android:layout_height="match_parent"
     tools:context=".SecondActivity">
 
+    <TextView
+        android:id="@+id/secondActivityText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Second activity"
+        app:layout_constraintBottom_toTopOf="@id/prefText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/prefText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Answer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/secondActivityText" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

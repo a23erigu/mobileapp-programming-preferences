@@ -25,10 +25,10 @@
     </com.google.android.material.appbar.AppBarLayout>
 
     <TextView
-        android:id="@+id/startText"
+        android:id="@+id/mainActivityText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/app_name"
+        android:text="Main activity"
         app:layout_constraintBottom_toTopOf="@id/switchActivityButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -41,9 +41,18 @@
         android:text="Switch Activity"
         tools:layout_editor_absoluteX="158dp"
         tools:layout_editor_absoluteY="410dp"
+        app:layout_constraintBottom_toTopOf="@id/settingsEditView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mainActivityText"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/settingsEditView"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/startText"/>
+        app:layout_constraintTop_toBottomOf="@+id/switchActivityButton"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

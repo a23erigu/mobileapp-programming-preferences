@@ -41,18 +41,21 @@
         android:text="Switch Activity"
         tools:layout_editor_absoluteX="158dp"
         tools:layout_editor_absoluteY="410dp"
-        app:layout_constraintBottom_toTopOf="@id/settingsEditView"
+        app:layout_constraintBottom_toTopOf="@id/prefText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/mainActivityText"/>
 
-    <EditText
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/prefText"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/settingsEditView"
+        android:text="Answer"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/switchActivityButton"/>
+        app:layout_constraintTop_toBottomOf="@id/switchActivityButton" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

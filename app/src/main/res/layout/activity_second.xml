@@ -11,19 +11,31 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Second activity"
-        app:layout_constraintBottom_toTopOf="@id/prefText"
+        app:layout_constraintBottom_toTopOf="@id/settingsEditView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/prefText"
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/settingsEditView"
+        app:layout_constraintBottom_toTopOf="@id/saveButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/secondActivityText"/>
+
+    <Button
+        android:id="@+id/saveButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Answer"
+        android:text="Save"
+        android:onClick="savePref"
+        tools:layout_editor_absoluteX="158dp"
+        tools:layout_editor_absoluteY="410dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/secondActivityText" />
+        app:layout_constraintTop_toBottomOf="@id/settingsEditView"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

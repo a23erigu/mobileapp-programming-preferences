@@ -22,7 +22,6 @@ public class SecondActivity extends AppCompatActivity {
         setContentView(R.layout.activity_second);
 
         myPreferenceRef = getSharedPreferences("MyPreferenceName", MODE_PRIVATE);
-
         myPreferenceEditor = myPreferenceRef.edit();
 
         saveButton = findViewById(R.id.saveButton);

@@ -26,8 +26,6 @@ public class MainActivity extends AppCompatActivity {
         myPreferenceRef = getSharedPreferences("MyPreferenceName", MODE_PRIVATE);
         myPreferenceEditor = myPreferenceRef.edit();
 
-
-
         switchActivityButton = findViewById(R.id.switchActivityButton);
         switchActivityButton.setOnClickListener(new View.OnClickListener() {
             @Override
